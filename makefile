@@ -1,6 +1,4 @@
 README.md : guessinggame.sh
 	echo " Title of the project: Final assignment git and github " > README.md
-	echo "\n Date in which make was ran at >> README.md
-	date >> README.md
-	echo "\n number of lines guessinggame.sh contains: " >> README.md
-	cat guessinggame.sh | wc -l >> README.md
+	echo '\n Date in which this file ran at: $(shell date +%Y-%m-%d:%H:%M:%S)\n' >> README.md
+	echo ' there are $(shell wc -l < guessinggame.sh) lines in guessinggame.sh\n' >> README.md
